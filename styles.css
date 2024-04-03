@@ -139,6 +139,15 @@ body {
   align-items: center;
 }
 
+.verticalContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
 .mainContainer {
   display: flex;
   justify-content: center;
@@ -171,6 +180,19 @@ body {
   font-size: 24px;
   text-align: center;
 }
+
+.pill {
+  background-color: #e9f9f1;
+  color: #1dbf73;
+  border-radius: 8px;
+  padding-inline: 14px;
+  height: 28px;
+  text-align: center;
+  padding-top: 12px;
+  margin-right: 14px;
+  margin-top: 14px;
+}
+
 .teamContainer {
   display: flex;
   flex-direction: column;
