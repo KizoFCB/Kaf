@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Talentera</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbarContainer">
+      <div class="appBarContainer">
+        <a
+          id="navMenu"
+          href="javascript:void(0)"
+          onclick="toggleDrawer()"
+          title="Toggle Navigation Menu"
+          ><i class="fa fa-bars" style="padding: 5px; color: white"></i
+        ></a>
+        <a href="#" class="homeNavItem">
+          <img src="/assets/logo.png" alt="logo" />
+        </a>
+        <a href="#auctions" class="navItem">
+          <div class="navListItem">
+            <img
+              src="/assets/auctions.svg"
+              alt="logo"
+              width="30px"
+              height="30px"
+            />
+            Auctions
+          </div>
+        </a>
+        <a href="#contests" class="navItem">
+          <div class="navListItem">
+            <img
+              src="/assets/contests.svg"
+              alt="logo"
+              width="30px"
+              height="30px"
+            />
+            Contests
+          </div>
+        </a>
+        <a href="#project" class="navItem">
+          <div class="navListItem">
+            <img
+              src="/assets/project.svg"
+              alt="logo"
+              width="30px"
+              height="30px"
+            />
+            Project
+          </div>
+        </a>
+        <a href="#portfolios" class="navItem">
+          <div class="navListItem">
+            <img
+              src="/assets/portfolios.svg"
+              alt="logo"
+              width="30px"
+              height="30px"
+            />
+            Portfolios
+          </div>
+        </a>
+        <a href="#freelancers" class="navItem">
+          <div class="navListItem">
+            <img
+              src="/assets/freelancers.svg"
+              alt="logo"
+              width="30px"
+              height="30px"
+            />
+            Freelancers
+          </div>
+        </a>
+        <a href="#forum" class="navItem">
+          <div class="navListItem">
+            <img
+              src="/assets/forum.svg"
+              alt="logo"
+              width="30px"
+              height="30px"
+            />
+            Forum
+          </div>
+        </a>
+        <div class="navItem">
+          <select name="Dropdown" id="dropdown" class="navItem selectContainer">
+            <option value="">Dropdown</option>
+            <option value="1">Item1</option>
+            <option value="2">Item2</option>
+            <option value="3">Item3</option>
+          </select>
+        </div>
+        <a
+          href="javascript:void(0)"
+          class="navItem"
+          style="margin-left: auto; padding-right: 8px"
+          ><i class="fa fa-search"></i
+        ></a>
+      </div>
+    </header>
+
+    <!-- Navbar on small screens -->
+    <div id="navResponsive" class="responsiveMenu">
+      <a href="#team" class="navItem" onclick="toggleDrawer()">Team</a>
+      <a href="#work" class="navItem" onclick="toggleDrawer()">Work</a>
+      <a href="#price" class="navItem" onclick="toggleDrawer()">Price</a>
+      <a href="#contact" class="navItem" onclick="toggleDrawer()">Contact</a>
+    </div>
+
+    <!-- Page content -->
+    <main style="width: 100%" class="mainContainer">
+      <!-- Hero Section -->
+      <div>
+        <section class="heroContainer">
+          <p class="navItem">Design / Logo Design</p>
+          <h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi,
+            cras neque Lorem ipsum dolor sit amet,
+          </h3>
+          <div class="flexContainer" style="justify-content: space-between">
+            <div class="actionsContainer">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.1 (500)</p>
+            </div>
+            <div class="actionsContainer">
+              <img src="/assets/share.svg" alt="share" />
+              <img src="/assets/like.svg" alt="like" />
+            </div>
+          </div>
+
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="assets/agency.svg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="assets/agency.svg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="assets/agency.svg" style="width: 100%" />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div
+              style="
+                text-align: center;
+                position: absolute;
+                bottom: 55px;
+                left: 45%;
+              "
+            >
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div></div>
+
+      <button onclick="topFunction()" id="scrollButton">
+        <i class="fa fa-arrow-up" style="color: white"></i>
+      </button>
+      <!-- End Page Content -->
+    </main>
+
+    <!-- Footer -->
+    <!-- <footer
+      class="footerContainer"
+    >
+    <p>Follow Us</p>
+    <div class="socialIcons">
+      <i class="fa fa-facebook" style="color: white;"></i>
+      <i class="fa fa-twitter" style="color: white;"></i>
+      <i class="fa fa-google-plus" style="color: white;"></i>
+      <i class="fa fa-instagram" style="color: white;"></i>
+      <i class="fa fa-linkedin" style="color: white;"></i>
+    </div>
+    </footer> -->
+
+    <script>
+      // Get the button
+      const scrollButton = document.getElementById("scrollButton");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          scrollButton.style.display = "block";
+        } else {
+          scrollButton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleDrawer() {
+        const x = document.getElementById("navResponsive");
+        if (x.className.indexOf("showMenu") == -1) {
+          x.className += " showMenu";
+        } else {
+          x.className = x.className.replace(" showMenu", "");
+        }
+      }
+
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>
