@@ -126,6 +126,12 @@ body {
   padding-inline: 8px;
   margin-right: 64px;
 }
+.card {
+  background-color: white;
+  padding-block: 24px;
+  padding-inline: 14px;
+  color: #333333;
+}
 
 .flexContainer {
   display: flex;
@@ -138,6 +144,9 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: 36px;
+  background-color: #fdfdfd;
+  padding-inline: 75px;
+  margin-top: 40px;
 }
 
 .actionsContainer {
