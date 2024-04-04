@@ -334,6 +334,12 @@ progress {
   flex: 1;
 }
 
+.itemCard {
+  position: relative;
+  width: 292px;
+  height: 415px;
+}
+
 .teamContainer {
   display: flex;
   flex-direction: column;
