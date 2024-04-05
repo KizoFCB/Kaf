@@ -25,9 +25,7 @@ body {
   display: none;
 }
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
-  margin: auto;
 }
 
 /* Next & previous buttons */
@@ -165,6 +163,7 @@ body {
   padding-block: 24px;
   padding-inline: 14px;
   color: #333333;
+  border-radius: 8px;
 }
 
 .flexContainer {

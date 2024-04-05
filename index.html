@@ -232,7 +232,7 @@
           <!-- Description Section -->
           <section>
             <h3>Description</h3>
-            <div class="card">
+            <div class="card" style="width: 100%">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
               nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
               amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem
@@ -311,7 +311,7 @@
           <!-- Description Section -->
           <section>
             <h3>Purchase Service</h3>
-            <div class="card horizontalContainer">
+            <div class="card horizontalContainer" style="width: 100%">
               <div class="counter">
                 <button id="decrement-btn">-</button>
                 <div id="counter-value">3</div>
@@ -356,7 +356,10 @@
                   <span class="fa fa-star checked"></span>
                   5.0
                 </div>
-                <div class="horizontalContainer" style="gap: 2px">
+                <div
+                  class="horizontalContainer"
+                  style="gap: 2px; color: lightgray"
+                >
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
@@ -375,7 +378,10 @@
                   <span class="fa fa-star checked"></span>
                   5.0
                 </div>
-                <div class="horizontalContainer" style="gap: 2px">
+                <div
+                  class="horizontalContainer"
+                  style="gap: 2px; color: lightgray"
+                >
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
@@ -394,7 +400,10 @@
                   <span class="fa fa-star checked"></span>
                   5.0
                 </div>
-                <div class="horizontalContainer" style="gap: 2px">
+                <div
+                  class="horizontalContainer"
+                  style="gap: 2px; color: lightgray"
+                >
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
@@ -508,7 +517,6 @@
             class="card verticalContainer"
             style="
               position: relative;
-              width: 296px;
               justify-content: flex-start;
               align-items: center;
               border-radius: 8px;
@@ -571,6 +579,83 @@
               Contact Me
             </button>
           </div>
+          <div class="card verticalContainer" style="padding-inline: 24px">
+            <h3 style="margin: 0">Info</h3>
+
+            <div
+              class="horizontalContainer"
+              style="justify-content: space-between; gap: 8px; width: 100%"
+            >
+              <div class="horizontalContainer" style="gap: 16px">
+                <i class="fa fa-usd" style="width: 18px; height: 18px"></i>
+                <p>Price</p>
+              </div>
+              <p style="width: 100px; text-align: center">$10</p>
+            </div>
+            <div
+              class="horizontalContainer"
+              style="justify-content: space-between; gap: 8px; width: 100%"
+            >
+              <div class="horizontalContainer" style="gap: 16px">
+                <i class="fa fa-clock-o" style="width: 18px; height: 18px"></i>
+                <p>Delivery Duration</p>
+              </div>
+              <p style="width: 100px; text-align: center">1 day</p>
+            </div>
+            <div
+              class="horizontalContainer"
+              style="justify-content: space-between; gap: 8px; width: 100%"
+            >
+              <div class="horizontalContainer" style="gap: 16px">
+                <i
+                  class="fa fa-shopping-basket"
+                  style="width: 18px; height: 18px"
+                ></i>
+                <p>In Progress Orders</p>
+              </div>
+              <p style="width: 100px; text-align: center">2</p>
+            </div>
+            <div
+              class="horizontalContainer"
+              style="justify-content: space-between; gap: 8px; width: 100%"
+            >
+              <div class="horizontalContainer" style="gap: 16px">
+                <i class="fa fa-users" style="width: 18px; height: 18px"></i>
+                <p>Customers</p>
+              </div>
+              <p style="width: 100px; text-align: center">2</p>
+            </div>
+            <div
+              class="horizontalContainer"
+              style="justify-content: space-between; gap: 8px; width: 100%"
+            >
+              <div class="horizontalContainer" style="gap: 16px">
+                <i class="fa fa-percent" style="width: 18px; height: 18px"></i>
+                <p>Sales</p>
+              </div>
+              <p style="width: 100px; text-align: center">$25</p>
+            </div>
+            <div
+              class="horizontalContainer"
+              style="justify-content: space-between; gap: 8px; width: 100%"
+            >
+              <div class="horizontalContainer" style="gap: 16px">
+                <i class="fa fa-list" style="width: 18px; height: 18px"></i>
+                <p>Category</p>
+              </div>
+              <p style="width: 100px; text-align: center">Design</p>
+            </div>
+            <div
+              class="horizontalContainer"
+              style="justify-content: space-between; gap: 8px; width: 100%"
+            >
+              <div class="horizontalContainer" style="gap: 16px">
+                <i class="fa fa-list" style="width: 18px; height: 18px"></i>
+                <p>Subcategory</p>
+              </div>
+              <p style="width: 100px; text-align: center">Logo Design</p>
+            </div>
+          </div>
         </div>
       </div>
       <!-- End Page Content -->
@@ -595,7 +680,13 @@
               />
               <div
                 class="card verticalContainer"
-                style="padding-top: 22px; padding-left: 15px"
+                style="
+                  padding-top: 22px;
+                  padding-left: 15px;
+                  width: unset;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                "
               >
                 <h3 style="margin: 0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit...
@@ -637,7 +728,13 @@
               />
               <div
                 class="card verticalContainer"
-                style="padding-top: 22px; padding-left: 15px"
+                style="
+                  padding-top: 22px;
+                  padding-left: 15px;
+                  width: unset;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                "
               >
                 <h3 style="margin: 0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit...
@@ -679,7 +776,13 @@
               />
               <div
                 class="card verticalContainer"
-                style="padding-top: 22px; padding-left: 15px"
+                style="
+                  padding-top: 22px;
+                  padding-left: 15px;
+                  width: unset;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                "
               >
                 <h3 style="margin: 0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit...
@@ -721,7 +824,13 @@
               />
               <div
                 class="card verticalContainer"
-                style="padding-top: 22px; padding-left: 15px"
+                style="
+                  padding-top: 22px;
+                  padding-left: 15px;
+                  width: unset;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                "
               >
                 <h3 style="margin: 0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit...
