@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Lato"
     />
     <link
       rel="stylesheet"
@@ -251,18 +251,18 @@
           <!-- Hero Section -->
           <section class="heroContainer">
             <p class="navItem">Design / Logo Design</p>
-            <h3>
+            <h2>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
               nisi, cras neque Lorem ipsum dolor sit amet,
-            </h3>
+            </h2>
             <div class="flexContainer" style="justify-content: space-between">
-              <div class="actionsContainer">
+              <div class="actionsContainer" style="color: lightgray">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
-                <p>4.1 (500)</p>
+                <p style="color: #696f79">4.1 (500)</p>
               </div>
               <div class="actionsContainer">
                 <img src="/assets/share.svg" alt="share" />
@@ -270,20 +270,17 @@
               </div>
             </div>
 
-            <div class="slideshow-container">
-              <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="assets/agency.svg" style="width: 100%" />
+            <div class="slideshowContainer">
+              <div class="slideContainer fade">
+                <img src="assets/agency.svg" alt="agency" width="100%" />
               </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="assets/agency.svg" style="width: 100%" />
+              <div class="slideContainer fade">
+                <img src="assets/agency.svg" alt="agency" width="100%" />
               </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="assets/agency.svg" style="width: 100%" />
+              <div class="slideContainer fade">
+                <img src="assets/agency.svg" alt="agency" width="100%" />
               </div>
 
               <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -299,7 +296,7 @@
 
           <!-- Description Section -->
           <section>
-            <h3>Description</h3>
+            <h2>Description</h2>
             <div class="card responsiveWidth" style="width: 100%">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
               nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
@@ -315,7 +312,7 @@
           <!-- Service Add-Ons Section -->
           <section>
             <div class="flexContainer" style="justify-content: space-between">
-              <h3>Service Add-Ons</h3>
+              <h2 style="margin-top: 50px">Service Add-Ons</h2>
               <div
                 class="flexContainer"
                 style="gap: 8px; align-items: baseline"
@@ -326,15 +323,16 @@
             </div>
             <div class="verticalContainer">
               <div class="card verticalContainer responsiveWidth">
-                <div>
+                <div class="horizontalContainer" style="gap: 0">
                   <i
                     class="fa fa-check-circle"
                     style="color: #1dbf73; font-size: 30px; margin-right: 16px"
                   ></i>
-
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
-                  nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor
-                  sit amet.
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem
+                    ipsum dolor sit amet.
+                  </p>
                 </div>
                 <div class="flexContainer" style="justify-content: flex-start">
                   <div class="pill">$100</div>
@@ -342,15 +340,16 @@
                 </div>
               </div>
               <div class="card verticalContainer responsiveWidth">
-                <div>
+                <div class="horizontalContainer" style="gap: 0">
                   <i
                     class="fa fa-circle-thin"
                     style="font-size: 30px; margin-right: 16px"
                   ></i>
-
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
-                  nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor
-                  sit amet.
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem
+                    ipsum dolor sit amet.
+                  </p>
                 </div>
                 <div class="flexContainer" style="justify-content: flex-start">
                   <div class="pill">$100</div>
@@ -358,15 +357,16 @@
                 </div>
               </div>
               <div class="card verticalContainer responsiveWidth">
-                <div>
+                <div class="horizontalContainer" style="gap: 0">
                   <i
                     class="fa fa-circle-thin"
                     style="font-size: 30px; margin-right: 16px"
                   ></i>
-
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
-                  nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor
-                  sit amet.
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem
+                    ipsum dolor sit amet.
+                  </p>
                 </div>
                 <div class="flexContainer" style="justify-content: flex-start">
                   <div class="pill">$100</div>
@@ -378,7 +378,7 @@
 
           <!-- Purchase Service Section -->
           <section>
-            <h3>Purchase Service</h3>
+            <h2 style="margin-top: 50px">Purchase Service</h2>
             <div
               class="card horizontalContainer responsiveWidth verticalResponsiveContainer"
               style="width: 100%"
@@ -388,26 +388,19 @@
                 <div id="counter-value">3</div>
                 <button id="increment-btn">+</button>
               </div>
-              <div
-                id="total-value"
-                class="flexContainer"
-                style="background-color: #f6f6f6; height: 48px; width: 185px"
-              >
-                $300
-              </div>
+              <h4 id="totalValue" class="flexContainer counterValue">$300</h4>
               <button class="purchaseButton">Purchase</button>
             </div>
           </section>
 
           <!-- Service Rating Section -->
           <section>
-            <h3>
+            <h2 style="margin-top: 80px">
               <span class="fa fa-star checked"></span>
               4.6 Service Rating . 46 Ratings
-            </h3>
+            </h2>
             <div
-              class="card verticalContainer responsiveWidth"
-              style="align-items: unset"
+              class="card verticalContainer ratingsContainer responsiveWidth"
             >
               <div
                 class="horizontalContainer equalContainer verticalResponsiveContainer"
@@ -420,18 +413,17 @@
                     5.0
                   </div>
                 </div>
-                <div
-                  class="horizontalContainer"
-                  style="gap: 2px; color: #696f79"
-                >
+                <div class="horizontalContainer starsContainer">
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star"></span>
                 </div>
-                <progress value="75" max="100">75%</progress>
-                <p>4</p>
+                <div class="horizontalContainer">
+                  <progress value="75" max="100">75%</progress>
+                  <p>4</p>
+                </div>
               </div>
               <div
                 class="horizontalContainer equalContainer verticalResponsiveContainer"
@@ -444,18 +436,17 @@
                     5.0
                   </div>
                 </div>
-                <div
-                  class="horizontalContainer"
-                  style="gap: 2px; color: #696f79"
-                >
+                <div class="horizontalContainer starsContainer">
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star"></span>
                 </div>
-                <progress value="75" max="100">75%</progress>
-                <p>4</p>
+                <div class="horizontalContainer">
+                  <progress value="75" max="100">75%</progress>
+                  <p>4</p>
+                </div>
               </div>
               <div
                 class="horizontalContainer equalContainer verticalResponsiveContainer"
@@ -468,36 +459,37 @@
                     5.0
                   </div>
                 </div>
-                <div
-                  class="horizontalContainer"
-                  style="gap: 2px; color: #696f79"
-                >
+                <div class="horizontalContainer starsContainer">
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star"></span>
                 </div>
-                <progress value="75" max="100">75%</progress>
-                <p>4</p>
+                <div class="horizontalContainer">
+                  <progress value="75" max="100">75%</progress>
+                  <p>4</p>
+                </div>
               </div>
             </div>
 
             <div
-              class="card verticalContainer responsiveWidth"
-              style="gap: 32px"
+              class="card verticalContainer reviewsContainer responsiveWidth"
             >
               <div class="horizontalContainer" style="align-items: flex-start">
                 <img src="/assets/person2.svg" alt="person2" />
                 <div class="verticalContainer" style="gap: 8px">
-                  <h3 style="margin: 0">Jane Smith</h3>
-                  <div class="horizontalContainer" style="gap: 8px">
+                  <h4 style="margin: 0">Jane Smith</h4>
+                  <div
+                    class="horizontalContainer"
+                    style="gap: 4px; color: lightgray"
+                  >
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star"></span>
-                    <p style="color: #696f79">. 30m</p>
+                    <p style="color: #696f79; margin-left: 8px">. 30m</p>
                   </div>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
                   nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor
@@ -510,14 +502,17 @@
               <div class="horizontalContainer" style="align-items: flex-start">
                 <img src="/assets/person2.svg" alt="person2" />
                 <div class="verticalContainer" style="gap: 8px">
-                  <h3 style="margin: 0">Jane Smith</h3>
-                  <div class="horizontalContainer" style="gap: 8px">
+                  <h4 style="margin: 0">Jane Smith</h4>
+                  <div
+                    class="horizontalContainer"
+                    style="gap: 4px; color: lightgray"
+                  >
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star"></span>
-                    <p style="color: #696f79">. 30m</p>
+                    <p style="color: #696f79; margin-left: 8px">. 30m</p>
                   </div>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
                   nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor
@@ -530,14 +525,17 @@
               <div class="horizontalContainer" style="align-items: flex-start">
                 <img src="/assets/person2.svg" alt="person2" />
                 <div class="verticalContainer" style="gap: 8px">
-                  <h3 style="margin: 0">Jane Smith</h3>
-                  <div class="horizontalContainer" style="gap: 8px">
+                  <h4 style="margin: 0">Jane Smith</h4>
+                  <div
+                    class="horizontalContainer"
+                    style="gap: 4px; color: lightgray"
+                  >
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star"></span>
-                    <p style="color: #696f79">. 30m</p>
+                    <p style="color: #696f79; margin-left: 8px">. 30m</p>
                   </div>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
                   nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor
@@ -584,7 +582,7 @@
               <i class="fa fa-map-marker" style="color: #696f79"></i>
               Cairo, Egypt
             </div>
-            <div class="actionsContainer" style="color: #696f79">
+            <div class="actionsContainer" style="color: lightgray">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -795,7 +793,7 @@
       <div style="justify-content: space-between" class="mainContainer">
         <section style="width: 100%; margin-bottom: 30px">
           <div class="flexContainer" style="justify-content: space-between">
-            <h3>Suggested Services</h3>
+            <h2>Suggested Services</h2>
             <p style="color: #696f79">see more</p>
           </div>
           <div
@@ -813,23 +811,14 @@
                 height="254px"
                 style="object-fit: cover"
               />
-              <div
-                class="card verticalContainer"
-                style="
-                  padding-top: 22px;
-                  padding-left: 15px;
-                  width: unset;
-                  border-top-left-radius: 0;
-                  border-top-right-radius: 0;
-                "
-              >
+              <div class="card verticalContainer descriptionSection">
                 <h3 style="margin: 0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit...
                 </h3>
                 <div class="horizontalContainer" style="gap: 8px">
                   <span class="fa fa-star checked"></span>
                   4.9
-                  <i class="fa fa-shopping-cart"></i>
+                  <i class="fa fa-shopping-cart" style="color: #696f79"></i>
                   300
                 </div>
                 <div
@@ -838,7 +827,7 @@
                 >
                   <div class="horizontalContainer">
                     <img src="/assets/person2.svg" alt="person2" />
-                    <h3 style="margin: 0">Jane Smith</h3>
+                    <h5 style="margin: 0">Jane Smith</h5>
                   </div>
                   <div
                     class="horizontalContainer"
@@ -868,7 +857,7 @@
                 <div class="horizontalContainer" style="gap: 8px">
                   <span class="fa fa-star checked"></span>
                   4.9
-                  <i class="fa fa-shopping-cart"></i>
+                  <i class="fa fa-shopping-cart" style="color: #696f79"></i>
                   300
                 </div>
                 <div
@@ -877,7 +866,7 @@
                 >
                   <div class="horizontalContainer">
                     <img src="/assets/person2.svg" alt="person2" />
-                    <h3 style="margin: 0">Jane Smith</h3>
+                    <h5 style="margin: 0">Jane Smith</h5>
                   </div>
                   <div
                     class="horizontalContainer"
@@ -907,7 +896,7 @@
                 <div class="horizontalContainer" style="gap: 8px">
                   <span class="fa fa-star checked"></span>
                   4.9
-                  <i class="fa fa-shopping-cart"></i>
+                  <i class="fa fa-shopping-cart" style="color: #696f79"></i>
                   300
                 </div>
                 <div
@@ -916,7 +905,7 @@
                 >
                   <div class="horizontalContainer">
                     <img src="/assets/person2.svg" alt="person2" />
-                    <h3 style="margin: 0">Jane Smith</h3>
+                    <h5 style="margin: 0">Jane Smith</h5>
                   </div>
                   <div
                     class="horizontalContainer"
@@ -946,7 +935,7 @@
                 <div class="horizontalContainer" style="gap: 8px">
                   <span class="fa fa-star checked"></span>
                   4.9
-                  <i class="fa fa-shopping-cart"></i>
+                  <i class="fa fa-shopping-cart" style="color: #696f79"></i>
                   300
                 </div>
                 <div
@@ -955,7 +944,7 @@
                 >
                   <div class="horizontalContainer">
                     <img src="/assets/person2.svg" alt="person2" />
-                    <h3 style="margin: 0">Jane Smith</h3>
+                    <h5 style="margin: 0">Jane Smith</h5>
                   </div>
                   <div
                     class="horizontalContainer"
@@ -973,31 +962,6 @@
     </main>
 
     <script>
-      // Get the button
-      const scrollButton = document.getElementById("scrollButton");
-
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () {
-        scrollFunction();
-      };
-
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          scrollButton.style.display = "block";
-        } else {
-          scrollButton.style.display = "none";
-        }
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-
       // Used to toggle the menu on small screens when clicking on the menu button
       function toggleDrawer() {
         const x = document.getElementById("navResponsive");
@@ -1007,6 +971,8 @@
           x.className = x.className.replace(" showMenu", "");
         }
       }
+
+      // Used for the slideshow
 
       let slideIndex = 1;
       showSlides(slideIndex);
@@ -1021,8 +987,10 @@
 
       function showSlides(n) {
         let i;
-        let slides = document.getElementsByClassName("mySlides");
+        let slides = document.getElementsByClassName("slideContainer");
         let dots = document.getElementsByClassName("dot");
+        let prev = document.getElementsByClassName("prev")[0];
+        let next = document.getElementsByClassName("next")[0];
         if (n > slides.length) {
           slideIndex = 1;
         }
@@ -1037,14 +1005,30 @@
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
+
+        console.log("index", slideIndex);
+
+        if (slideIndex === 1) {
+          prev.className = `${prev.className} finishedButton`;
+        } else {
+          prev.className = prev.className.replace(" finishedButton", "");
+        }
+
+        if (slideIndex === slides.length) {
+          next.className = `${next.className} finishedButton`;
+        } else {
+          next.className = next.className.replace(" finishedButton", "");
+        }
       }
+
+      // Used for the counter
 
       let counter = 0;
 
       const counterValue = document.getElementById("counter-value");
       const incrementBtn = document.getElementById("increment-btn");
       const decrementBtn = document.getElementById("decrement-btn");
-      const totalValue = document.querySelector("#total-value");
+      const totalValue = document.querySelector("#totalValue");
 
       // To increment the value of counter
       incrementBtn.addEventListener("click", () => {
