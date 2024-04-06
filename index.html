@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Talentera</title>
+    <title>KAF</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -27,7 +27,7 @@
           ><i class="fa fa-bars" style="padding: 5px; color: black"></i
         ></a>
         <a href="#" class="homeNavItem">
-          <img src="/assets/logo.png" alt="logo" />
+          <img src="/assets/logo.svg" alt="logo" />
         </a>
         <a href="#auctions" class="navItem" style="margin-left: 103px">
           <div class="navListItem">
@@ -289,14 +289,7 @@
               <a class="prev" onclick="plusSlides(-1)">❮</a>
               <a class="next" onclick="plusSlides(1)">❯</a>
 
-              <div
-                style="
-                  text-align: center;
-                  position: absolute;
-                  bottom: 55px;
-                  left: 45%;
-                "
-              >
+              <div class="dotsContainer">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
@@ -319,7 +312,7 @@
             </div>
           </section>
 
-          <!-- Description Section -->
+          <!-- Service Add-Ons Section -->
           <section>
             <div class="flexContainer" style="justify-content: space-between">
               <h3>Service Add-Ons</h3>
@@ -327,8 +320,8 @@
                 class="flexContainer"
                 style="gap: 8px; align-items: baseline"
               >
-                <i class="fa fa-check-circle" style="color: lightgray"></i>
-                <p style="color: lightgray">select all</p>
+                <i class="fa fa-check-circle" style="color: #696f79"></i>
+                <p style="color: #696f79">select all</p>
               </div>
             </div>
             <div class="verticalContainer">
@@ -383,7 +376,7 @@
             </div>
           </section>
 
-          <!-- Description Section -->
+          <!-- Purchase Service Section -->
           <section>
             <h3>Purchase Service</h3>
             <div
@@ -406,7 +399,7 @@
             </div>
           </section>
 
-          <!-- Description Section -->
+          <!-- Service Rating Section -->
           <section>
             <h3>
               <span class="fa fa-star checked"></span>
@@ -429,7 +422,7 @@
                 </div>
                 <div
                   class="horizontalContainer"
-                  style="gap: 2px; color: lightgray"
+                  style="gap: 2px; color: #696f79"
                 >
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
@@ -453,7 +446,7 @@
                 </div>
                 <div
                   class="horizontalContainer"
-                  style="gap: 2px; color: lightgray"
+                  style="gap: 2px; color: #696f79"
                 >
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
@@ -477,7 +470,7 @@
                 </div>
                 <div
                   class="horizontalContainer"
-                  style="gap: 2px; color: lightgray"
+                  style="gap: 2px; color: #696f79"
                 >
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
@@ -504,7 +497,7 @@
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star"></span>
-                    <p style="color: lightgray">. 30m</p>
+                    <p style="color: #696f79">. 30m</p>
                   </div>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
                   nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor
@@ -524,7 +517,7 @@
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star"></span>
-                    <p style="color: lightgray">. 30m</p>
+                    <p style="color: #696f79">. 30m</p>
                   </div>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
                   nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor
@@ -544,7 +537,7 @@
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star"></span>
-                    <p style="color: lightgray">. 30m</p>
+                    <p style="color: #696f79">. 30m</p>
                   </div>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
                   nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor
@@ -561,30 +554,10 @@
                 <img src="/assets/person.svg" alt="person" />
                 <div class="verticalContainer" style="gap: 24px">
                   <textarea
-                    class="responsiveWidth"
+                    class="textareaContainer responsiveWidth"
                     placeholder="Write your review in here"
-                    style="
-                      width: 95%;
-                      background-color: #f6f6f6;
-                      min-height: 168px;
-                      border: none;
-                      border-radius: 8px;
-                      padding-inline: 20px;
-                      padding-block: 33px;
-                    "
                   ></textarea>
-                  <button
-                    style="
-                      background-color: #1dbf73;
-                      width: 185px;
-                      height: 48px;
-                      color: white;
-                      border-radius: 8px;
-                      border: none;
-                    "
-                  >
-                    Post Review
-                  </button>
+                  <button class="submitButton">Post Review</button>
                 </div>
               </div>
             </div>
@@ -592,18 +565,7 @@
         </div>
 
         <div class="verticalContainer" style="width: unset; gap: 60px">
-          <div
-            class="card verticalContainer"
-            style="
-              position: relative;
-              justify-content: flex-start;
-              align-items: center;
-              border-radius: 8px;
-              width: unset;
-              padding-top: 75px;
-              gap: 8px;
-            "
-          >
+          <div class="card verticalContainer sidebarCard">
             <h3 style="margin: 0; position: absolute; left: 20px; top: 20px">
               Seller
             </h3>
@@ -618,11 +580,11 @@
               <h3 style="margin: 0">Jane Smith</h3>
               <img src="/assets/checked.svg" alt="checked" />
             </div>
-            <div class="horizontalContainer" style="color: lightgray">
-              <i class="fa fa-map-marker" style="color: lightgray"></i>
+            <div class="horizontalContainer" style="color: #696f79">
+              <i class="fa fa-map-marker" style="color: #696f79"></i>
               Cairo, Egypt
             </div>
-            <div class="actionsContainer" style="color: lightgray">
+            <div class="actionsContainer" style="color: #696f79">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -645,18 +607,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
               Lorem ipsum dolor sit amet..
             </p>
-            <button
-              style="
-                background-color: #1dbf73;
-                width: 185px;
-                height: 48px;
-                color: white;
-                border-radius: 8px;
-                border: none;
-              "
-            >
-              Contact Me
-            </button>
+            <button class="contactButton">Contact Me</button>
           </div>
           <div
             class="card verticalContainer"
@@ -753,33 +704,17 @@
               </div>
             </div>
           </div>
-          <div
-            class="verticalContainer card"
-            style="
-              padding-block: unset;
-              padding-inline: unset;
-              background-color: unset;
-            "
-          >
+          <div class="verticalContainer card recommendedSection">
             <div
               class="flexContainer"
               style="width: 100%; justify-content: space-between"
             >
               <h3 style="margin: 0">Seller Other Services</h3>
-              <p style="color: lightgray; margin: 0">see more</p>
+              <p style="color: #696f79; margin: 0">see more</p>
             </div>
             <div class="horizontalContainer" style="gap: 0; border-radius: 8px">
               <img src="/assets/agency3.svg" alt="agency3" />
-              <div
-                class="verticalContainer"
-                style="
-                  background-color: white;
-                  padding: 12px;
-                  gap: 8px;
-                  border-top-right-radius: 8px;
-                  border-bottom-right-radius: 8px;
-                "
-              >
+              <div class="verticalContainer smallCardContainer">
                 <p style="margin: 0">
                   Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor...
                 </p>
@@ -794,7 +729,7 @@
                       class="horizontalContainer"
                       style="gap: 0; justify-content: flex-end"
                     >
-                      <i class="fa fa-tag" style="color: green"></i>
+                      <i class="fa fa-tag" style="color: #1dbf73"></i>
                       $10
                     </div>
                   </div>
@@ -804,16 +739,7 @@
             </div>
             <div class="horizontalContainer" style="gap: 0; border-radius: 8px">
               <img src="/assets/agency3.svg" alt="agency3" />
-              <div
-                class="verticalContainer"
-                style="
-                  background-color: white;
-                  padding: 12px;
-                  gap: 8px;
-                  border-top-right-radius: 8px;
-                  border-bottom-right-radius: 8px;
-                "
-              >
+              <div class="verticalContainer smallCardContainer">
                 <p style="margin: 0">
                   Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor...
                 </p>
@@ -828,7 +754,7 @@
                       class="horizontalContainer"
                       style="gap: 0; justify-content: flex-end"
                     >
-                      <i class="fa fa-tag" style="color: green"></i>
+                      <i class="fa fa-tag" style="color: #1dbf73"></i>
                       $10
                     </div>
                   </div>
@@ -838,16 +764,7 @@
             </div>
             <div class="horizontalContainer" style="gap: 0; border-radius: 8px">
               <img src="/assets/agency3.svg" alt="agency3" />
-              <div
-                class="verticalContainer"
-                style="
-                  background-color: white;
-                  padding: 12px;
-                  gap: 8px;
-                  border-top-right-radius: 8px;
-                  border-bottom-right-radius: 8px;
-                "
-              >
+              <div class="verticalContainer smallCardContainer">
                 <p style="margin: 0">
                   Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor...
                 </p>
@@ -862,7 +779,7 @@
                       class="horizontalContainer"
                       style="gap: 0; justify-content: flex-end"
                     >
-                      <i class="fa fa-tag" style="color: green"></i>
+                      <i class="fa fa-tag" style="color: #1dbf73"></i>
                       $10
                     </div>
                   </div>
@@ -879,7 +796,7 @@
         <section style="width: 100%; margin-bottom: 30px">
           <div class="flexContainer" style="justify-content: space-between">
             <h3>Suggested Services</h3>
-            <p style="color: lightgray">see more</p>
+            <p style="color: #696f79">see more</p>
           </div>
           <div
             class="horizontalContainer verticalResponsiveContainer"
@@ -927,7 +844,7 @@
                     class="horizontalContainer"
                     style="gap: 0; justify-content: flex-end"
                   >
-                    <i class="fa fa-tag" style="color: green"></i>
+                    <i class="fa fa-tag" style="color: #1dbf73"></i>
                     $10
                   </div>
                 </div>
@@ -944,16 +861,7 @@
                 height="254px"
                 style="object-fit: cover"
               />
-              <div
-                class="card verticalContainer"
-                style="
-                  padding-top: 22px;
-                  padding-left: 15px;
-                  width: unset;
-                  border-top-left-radius: 0;
-                  border-top-right-radius: 0;
-                "
-              >
+              <div class="card verticalContainer descriptionSection">
                 <h3 style="margin: 0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit...
                 </h3>
@@ -975,7 +883,7 @@
                     class="horizontalContainer"
                     style="gap: 0; justify-content: flex-end"
                   >
-                    <i class="fa fa-tag" style="color: green"></i>
+                    <i class="fa fa-tag" style="color: #1dbf73"></i>
                     $10
                   </div>
                 </div>
@@ -992,16 +900,7 @@
                 height="254px"
                 style="object-fit: cover"
               />
-              <div
-                class="card verticalContainer"
-                style="
-                  padding-top: 22px;
-                  padding-left: 15px;
-                  width: unset;
-                  border-top-left-radius: 0;
-                  border-top-right-radius: 0;
-                "
-              >
+              <div class="card verticalContainer descriptionSection">
                 <h3 style="margin: 0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit...
                 </h3>
@@ -1023,7 +922,7 @@
                     class="horizontalContainer"
                     style="gap: 0; justify-content: flex-end"
                   >
-                    <i class="fa fa-tag" style="color: green"></i>
+                    <i class="fa fa-tag" style="color: #1dbf73"></i>
                     $10
                   </div>
                 </div>
@@ -1040,16 +939,7 @@
                 height="254px"
                 style="object-fit: cover"
               />
-              <div
-                class="card verticalContainer"
-                style="
-                  padding-top: 22px;
-                  padding-left: 15px;
-                  width: unset;
-                  border-top-left-radius: 0;
-                  border-top-right-radius: 0;
-                "
-              >
+              <div class="card verticalContainer descriptionSection">
                 <h3 style="margin: 0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit...
                 </h3>
@@ -1071,7 +961,7 @@
                     class="horizontalContainer"
                     style="gap: 0; justify-content: flex-end"
                   >
-                    <i class="fa fa-tag" style="color: green"></i>
+                    <i class="fa fa-tag" style="color: #1dbf73"></i>
                     $10
                   </div>
                 </div>
