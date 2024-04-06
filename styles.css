@@ -410,11 +410,12 @@ progress::-moz-progress-bar {
 
 .contactButton {
   background-color: #1dbf73;
-  width: 185px;
-  height: 48px;
+  width: 100%;
+  margin-inline: 16px;
   color: white;
   border-radius: 8px;
   border: none;
+  height: 40px;
 }
 
 .recommendedSection {
@@ -424,6 +425,8 @@ progress::-moz-progress-bar {
 }
 
 .smallCardContainer {
+  height: 85px;
+  justify-content: space-between;
   background-color: white;
   padding: 12px;
   gap: 8px;
