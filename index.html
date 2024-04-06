@@ -24,7 +24,7 @@
           href="javascript:void(0)"
           onclick="toggleDrawer()"
           title="Toggle Navigation Menu"
-          ><i class="fa fa-bars" style="padding: 5px; color: white"></i
+          ><i class="fa fa-bars" style="padding: 5px; color: black"></i
         ></a>
         <a href="#" class="homeNavItem">
           <img src="/assets/logo.png" alt="logo" />
@@ -106,7 +106,7 @@
               width="43px"
               height="43px"
             />
-            <div class="dropdown-content">
+            <div class="dropdownContent">
               <div class="horizontalContainer">
                 <img
                   src="/assets/person.svg"
@@ -116,7 +116,7 @@
                 />
                 <div>
                   <h4 style="color: black; margin: 0">Ahmed Ali</h4>
-                  <p style="color: lightgray; margin: 0">Student</p>
+                  <p style="color: #696f79; margin: 0">Student</p>
                 </div>
               </div>
 
@@ -163,10 +163,85 @@
 
     <!-- Navbar on small screens -->
     <div id="navResponsive" class="responsiveMenu">
-      <a href="#team" class="navItem" onclick="toggleDrawer()">Team</a>
-      <a href="#work" class="navItem" onclick="toggleDrawer()">Work</a>
-      <a href="#price" class="navItem" onclick="toggleDrawer()">Price</a>
-      <a href="#contact" class="navItem" onclick="toggleDrawer()">Contact</a>
+      <div class="horizontalContainer" onclick="toggleDrawer()">
+        <img src="/assets/auctions.svg" alt="logo" width="30px" height="30px" />
+        Auctions
+      </div>
+      <div class="horizontalContainer" onclick="toggleDrawer()">
+        <img src="/assets/contests.svg" alt="logo" width="30px" height="30px" />
+        Contests
+      </div>
+      <div class="horizontalContainer" onclick="toggleDrawer()">
+        <img src="/assets/project.svg" alt="logo" width="30px" height="30px" />
+        Project
+      </div>
+      <div class="horizontalContainer" onclick="toggleDrawer()">
+        <img
+          src="/assets/portfolios.svg"
+          alt="logo"
+          width="30px"
+          height="30px"
+        />
+        Portfolios
+      </div>
+      <div class="horizontalContainer" onclick="toggleDrawer()">
+        <img
+          src="/assets/freelancers.svg"
+          alt="logo"
+          width="30px"
+          height="30px"
+        />
+        Freelancers
+      </div>
+      <div class="horizontalContainer" onclick="toggleDrawer()">
+        <img src="/assets/forum.svg" alt="logo" width="30px" height="30px" />
+        Forum
+      </div>
+      <br />
+      <div class="dropdownContent responsiveDropdownContent">
+        <div class="horizontalContainer">
+          <img
+            src="/assets/person.svg"
+            alt="person"
+            width="43px"
+            height="43px"
+          />
+          <div>
+            <h4 style="color: black; margin: 0">Ahmed Ali</h4>
+            <p style="color: #696f79; margin: 0">Student</p>
+          </div>
+        </div>
+
+        <div class="horizontalContainer">
+          <i class="fa fa-user-circle-o"></i>
+          <p style="color: #696f79">My Profile</p>
+        </div>
+        <div class="horizontalContainer" style="justify-content: space-between">
+          <div class="horizontalContainer">
+            <i class="fa fa-moon-o"></i>
+            <p style="color: #696f79">Dark Mode</p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="horizontalContainer" style="justify-content: space-between">
+          <div class="horizontalContainer">
+            <i class="fa fa-language"></i>
+            <p style="color: #696f79">Language</p>
+          </div>
+          <img src="/assets/language.svg" alt="language" />
+        </div>
+        <div class="horizontalContainer">
+          <i class="fa fa-cog"></i>
+          <p style="color: #696f79">Account Settings</p>
+        </div>
+        <div class="horizontalContainer">
+          <i class="fa fa-sign-out" style="color: #f56342"></i>
+          <p style="color: #f56342">Logout</p>
+        </div>
+      </div>
     </div>
 
     <!-- Page content -->
@@ -232,7 +307,7 @@
           <!-- Description Section -->
           <section>
             <h3>Description</h3>
-            <div class="card" style="width: 100%">
+            <div class="card responsiveWidth" style="width: 100%">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
               nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
               amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem
@@ -257,7 +332,7 @@
               </div>
             </div>
             <div class="verticalContainer">
-              <div class="card verticalContainer">
+              <div class="card verticalContainer responsiveWidth">
                 <div>
                   <i
                     class="fa fa-check-circle"
@@ -273,7 +348,7 @@
                   <div class="pill">2 Days</div>
                 </div>
               </div>
-              <div class="card verticalContainer">
+              <div class="card verticalContainer responsiveWidth">
                 <div>
                   <i
                     class="fa fa-circle-thin"
@@ -289,7 +364,7 @@
                   <div class="pill">2 Days</div>
                 </div>
               </div>
-              <div class="card verticalContainer">
+              <div class="card verticalContainer responsiveWidth">
                 <div>
                   <i
                     class="fa fa-circle-thin"
@@ -311,7 +386,10 @@
           <!-- Description Section -->
           <section>
             <h3>Purchase Service</h3>
-            <div class="card horizontalContainer" style="width: 100%">
+            <div
+              class="card horizontalContainer responsiveWidth verticalResponsiveContainer"
+              style="width: 100%"
+            >
               <div class="counter">
                 <button id="decrement-btn">-</button>
                 <div id="counter-value">3</div>
@@ -324,19 +402,7 @@
               >
                 $300
               </div>
-              <button
-                style="
-                  background-color: #1dbf73;
-                  width: 185px;
-                  height: 48px;
-                  color: white;
-                  border-radius: 8px;
-                  border: none;
-                  margin-left: auto;
-                "
-              >
-                Purchase
-              </button>
+              <button class="purchaseButton">Purchase</button>
             </div>
           </section>
 
@@ -346,9 +412,12 @@
               <span class="fa fa-star checked"></span>
               4.6 Service Rating . 46 Ratings
             </h3>
-            <div class="card verticalContainer" style="align-items: unset">
+            <div
+              class="card verticalContainer responsiveWidth"
+              style="align-items: unset"
+            >
               <div
-                class="horizontalContainer equalContainer"
+                class="horizontalContainer equalContainer verticalResponsiveContainer"
                 style="justify-content: space-between"
               >
                 <div class="horizontalContainer equalContainer">
@@ -372,7 +441,7 @@
                 <p>4</p>
               </div>
               <div
-                class="horizontalContainer equalContainer"
+                class="horizontalContainer equalContainer verticalResponsiveContainer"
                 style="justify-content: space-between"
               >
                 <div class="horizontalContainer equalContainer">
@@ -396,7 +465,7 @@
                 <p>4</p>
               </div>
               <div
-                class="horizontalContainer equalContainer"
+                class="horizontalContainer equalContainer verticalResponsiveContainer"
                 style="justify-content: space-between"
               >
                 <div class="horizontalContainer equalContainer">
@@ -421,7 +490,10 @@
               </div>
             </div>
 
-            <div class="card verticalContainer" style="gap: 32px">
+            <div
+              class="card verticalContainer responsiveWidth"
+              style="gap: 32px"
+            >
               <div class="horizontalContainer" style="align-items: flex-start">
                 <img src="/assets/person2.svg" alt="person2" />
                 <div class="verticalContainer" style="gap: 8px">
@@ -489,6 +561,7 @@
                 <img src="/assets/person.svg" alt="person" />
                 <div class="verticalContainer" style="gap: 24px">
                   <textarea
+                    class="responsiveWidth"
                     placeholder="Write your review in here"
                     style="
                       width: 95%;
@@ -803,12 +876,15 @@
       <!-- End Page Content -->
 
       <div style="justify-content: space-between" class="mainContainer">
-        <section>
+        <section style="width: 100%; margin-bottom: 30px">
           <div class="flexContainer" style="justify-content: space-between">
             <h3>Suggested Services</h3>
             <p style="color: lightgray">see more</p>
           </div>
-          <div class="horizontalContainer" style="gap: 32px; flex-wrap: wrap">
+          <div
+            class="horizontalContainer verticalResponsiveContainer"
+            style="gap: 32px; flex-wrap: wrap"
+          >
             <div class="itemCard verticalContainer" style="gap: 0">
               <div class="likeButton flexContainer">
                 <i class="fa fa-heart-o"></i>
@@ -1005,20 +1081,6 @@
         </section>
       </div>
     </main>
-
-    <!-- Footer -->
-    <!-- <footer
-      class="footerContainer"
-    >
-    <p>Follow Us</p>
-    <div class="socialIcons">
-      <i class="fa fa-facebook" style="color: white;"></i>
-      <i class="fa fa-twitter" style="color: white;"></i>
-      <i class="fa fa-google-plus" style="color: white;"></i>
-      <i class="fa fa-instagram" style="color: white;"></i>
-      <i class="fa fa-linkedin" style="color: white;"></i>
-    </div>
-    </footer> -->
 
     <script>
       // Get the button
