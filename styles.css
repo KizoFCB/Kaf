@@ -519,6 +519,14 @@ progress::-moz-progress-bar {
   padding-right: 8px;
 }
 
+.hide {
+  display: none;
+}
+
+.activeChecked {
+  color: #1dbf73;
+}
+
 @media screen and (max-width: 870px) {
   .appBarContainer {
     flex-direction: row-reverse;

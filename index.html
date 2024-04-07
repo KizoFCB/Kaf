@@ -311,14 +311,22 @@
 
           <!-- Service Add-Ons Section -->
           <section>
-            <div class="flexContainer" style="justify-content: space-between">
+            <div
+              class="flexContainer"
+              style="justify-content: space-between; align-items: baseline"
+            >
               <h2 style="margin-top: 50px">Service Add-Ons</h2>
               <div
                 class="flexContainer"
                 style="gap: 8px; align-items: baseline"
               >
-                <i class="fa fa-check-circle" style="color: #696f79"></i>
-                <p style="color: #696f79">select all</p>
+                <i class="fa fa-check-circle" style="color: lightgray"></i>
+                <p
+                  style="color: lightgray; margin: 0; cursor: pointer"
+                  onclick="selectAll()"
+                >
+                  select all
+                </p>
               </div>
             </div>
             <div class="verticalContainer">
@@ -721,7 +729,12 @@
               style="width: 100%; justify-content: space-between"
             >
               <h3 style="margin: 0">Seller Other Services</h3>
-              <p style="color: #696f79; margin: 0">see more</p>
+              <p
+                style="color: #696f79; margin: 0; cursor: pointer"
+                onclick="showSmallCards()"
+              >
+                see more
+              </p>
             </div>
             <div class="horizontalContainer" style="gap: 0; border-radius: 8px">
               <img src="/assets/agency3.svg" alt="agency3" />
@@ -798,6 +811,90 @@
                 </div>
               </div>
             </div>
+            <div
+              class="horizontalContainer hide"
+              style="gap: 0; border-radius: 8px"
+            >
+              <img src="/assets/agency3.svg" alt="agency3" />
+              <div class="verticalContainer smallCardContainer">
+                <p style="margin: 0; font-size: 12px">
+                  Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor...
+                </p>
+                <div
+                  class="horizontalContainer"
+                  style="justify-content: space-between; width: 100%"
+                >
+                  <div class="horizontalContainer" style="gap: 8px">
+                    <span class="fa fa-star checked"></span>
+                    <p style="color: #696f79">4.9 (50)</p>
+                    <div
+                      class="horizontalContainer"
+                      style="gap: 0; justify-content: flex-end"
+                    >
+                      <i class="fa fa-tag" style="color: #1dbf73"></i>
+                      $10
+                    </div>
+                  </div>
+                  <i class="fa fa-heart-o"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="horizontalContainer hide"
+              style="gap: 0; border-radius: 8px"
+            >
+              <img src="/assets/agency3.svg" alt="agency3" />
+              <div class="verticalContainer smallCardContainer">
+                <p style="margin: 0; font-size: 12px">
+                  Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor...
+                </p>
+                <div
+                  class="horizontalContainer"
+                  style="justify-content: space-between; width: 100%"
+                >
+                  <div class="horizontalContainer" style="gap: 8px">
+                    <span class="fa fa-star checked"></span>
+                    <p style="color: #696f79">4.9 (50)</p>
+                    <div
+                      class="horizontalContainer"
+                      style="gap: 0; justify-content: flex-end"
+                    >
+                      <i class="fa fa-tag" style="color: #1dbf73"></i>
+                      $10
+                    </div>
+                  </div>
+                  <i class="fa fa-heart-o"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="horizontalContainer hide"
+              style="gap: 0; border-radius: 8px"
+            >
+              <img src="/assets/agency3.svg" alt="agency3" />
+              <div class="verticalContainer smallCardContainer">
+                <p style="margin: 0; font-size: 12px">
+                  Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor...
+                </p>
+                <div
+                  class="horizontalContainer"
+                  style="justify-content: space-between; width: 100%"
+                >
+                  <div class="horizontalContainer" style="gap: 8px">
+                    <span class="fa fa-star checked"></span>
+                    <p style="color: #696f79">4.9 (50)</p>
+                    <div
+                      class="horizontalContainer"
+                      style="gap: 0; justify-content: flex-end"
+                    >
+                      <i class="fa fa-tag" style="color: #1dbf73"></i>
+                      $10
+                    </div>
+                  </div>
+                  <i class="fa fa-heart-o"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -807,7 +904,9 @@
         <section style="width: 100%; margin-bottom: 30px">
           <div class="flexContainer" style="justify-content: space-between">
             <h2>Suggested Services</h2>
-            <p style="color: #696f79">see more</p>
+            <p style="color: #696f79; cursor: pointer" onclick="showBigCards()">
+              see more
+            </p>
           </div>
           <div
             class="horizontalContainer verticalResponsiveContainer"
@@ -969,6 +1068,123 @@
                 </div>
               </div>
             </div>
+            <div class="itemCard hide verticalContainer" style="gap: 0">
+              <div class="likeButton flexContainer">
+                <i class="fa fa-heart-o"></i>
+              </div>
+              <img
+                src="/assets/agency2.svg"
+                alt="agency"
+                width="292px"
+                height="254px"
+                style="object-fit: cover"
+              />
+              <div class="card verticalContainer descriptionSection">
+                <h3 style="margin: 0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                </h3>
+                <div class="horizontalContainer" style="gap: 8px">
+                  <span class="fa fa-star checked"></span>
+                  4.9
+                  <i class="fa fa-shopping-cart" style="color: #696f79"></i>
+                  300
+                </div>
+                <div
+                  class="horizontalContainer"
+                  style="justify-content: space-between; width: 264px"
+                >
+                  <div class="horizontalContainer">
+                    <img src="/assets/person2.svg" alt="person2" />
+                    <h5 style="margin: 0">Jane Smith</h5>
+                  </div>
+                  <div
+                    class="horizontalContainer"
+                    style="gap: 0; justify-content: flex-end"
+                  >
+                    <i class="fa fa-tag" style="color: #1dbf73"></i>
+                    $10
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="itemCard hide verticalContainer" style="gap: 0">
+              <div class="likeButton flexContainer">
+                <i class="fa fa-heart-o"></i>
+              </div>
+              <img
+                src="/assets/agency2.svg"
+                alt="agency"
+                width="292px"
+                height="254px"
+                style="object-fit: cover"
+              />
+              <div class="card verticalContainer descriptionSection">
+                <h3 style="margin: 0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                </h3>
+                <div class="horizontalContainer" style="gap: 8px">
+                  <span class="fa fa-star checked"></span>
+                  4.9
+                  <i class="fa fa-shopping-cart" style="color: #696f79"></i>
+                  300
+                </div>
+                <div
+                  class="horizontalContainer"
+                  style="justify-content: space-between; width: 264px"
+                >
+                  <div class="horizontalContainer">
+                    <img src="/assets/person2.svg" alt="person2" />
+                    <h5 style="margin: 0">Jane Smith</h5>
+                  </div>
+                  <div
+                    class="horizontalContainer"
+                    style="gap: 0; justify-content: flex-end"
+                  >
+                    <i class="fa fa-tag" style="color: #1dbf73"></i>
+                    $10
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="itemCard hide verticalContainer" style="gap: 0">
+              <div class="likeButton flexContainer">
+                <i class="fa fa-heart-o"></i>
+              </div>
+              <img
+                src="/assets/agency2.svg"
+                alt="agency"
+                width="292px"
+                height="254px"
+                style="object-fit: cover"
+              />
+              <div class="card verticalContainer descriptionSection">
+                <h3 style="margin: 0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                </h3>
+                <div class="horizontalContainer" style="gap: 8px">
+                  <span class="fa fa-star checked"></span>
+                  4.9
+                  <i class="fa fa-shopping-cart" style="color: #696f79"></i>
+                  300
+                </div>
+                <div
+                  class="horizontalContainer"
+                  style="justify-content: space-between; width: 264px"
+                >
+                  <div class="horizontalContainer">
+                    <img src="/assets/person2.svg" alt="person2" />
+                    <h5 style="margin: 0">Jane Smith</h5>
+                  </div>
+                  <div
+                    class="horizontalContainer"
+                    style="gap: 0; justify-content: flex-end"
+                  >
+                    <i class="fa fa-tag" style="color: #1dbf73"></i>
+                    $10
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -1019,8 +1235,6 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
 
-        console.log("index", slideIndex);
-
         if (slideIndex === 1) {
           prev.className = `${prev.className} finishedButton`;
         } else {
@@ -1056,6 +1270,40 @@
         counterValue.innerHTML = counter;
         totalValue.innerHTML = `$${counter * 100}`;
       });
+
+      // Used to remove the hide class
+
+      function showSmallCards() {
+        let childrenComponents =
+          document.getElementsByClassName("recommendedSection")?.[0]?.children;
+        for (i = 0; i < childrenComponents.length; i++) {
+          if (childrenComponents[i].className === "horizontalContainer hide")
+            childrenComponents[i].className = childrenComponents[
+              i
+            ].className.replace(" hide", "");
+        }
+      }
+
+      // Used to remove the hide class
+
+      function showBigCards() {
+        let itemCards = document.getElementsByClassName("itemCard");
+        for (i = 0; i < itemCards.length; i++) {
+          if (itemCards[i].className.includes("hide"))
+            itemCards[i].className = itemCards[i].className.replace(
+              " hide",
+              ""
+            );
+        }
+      }
+
+      // Used to select all checkboxes
+
+      function selectAll() {
+        const checkboxes = document.getElementsByClassName("fa-circle-thin");
+        checkboxes[0].className = "fa fa-check-circle activeChecked";
+        checkboxes[0].className = "fa fa-check-circle activeChecked";
+      }
     </script>
   </body>
 </html>
