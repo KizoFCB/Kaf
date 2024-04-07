@@ -541,6 +541,9 @@ progress::-moz-progress-bar {
   .purchaseButton {
     margin-left: unset;
   }
+  .ratingsContainer {
+    padding-inline: unset;
+  }
   .responsiveWidth {
     width: unset !important;
   }
